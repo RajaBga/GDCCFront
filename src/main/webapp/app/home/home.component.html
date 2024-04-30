@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="display-4">Custom Welcome Page</h1>
+
+    <p class="lead">This is your custom landing page. You can add any content here.</p>
+
+    <div *ngIf="!account" class="alert alert-warning">
+      <p>If you want to sign in, click the button below:</p>
+      <button class="btn btn-primary" (click)="login()">Sign In</button>
+    </div>
+
+    <div *ngIf="account" class="alert alert-success">
+      <p>You are currently logged in as "{{ account.login }}".</p>
+    </div>
+  </div>
+</div>
