@@ -1,0 +1,45 @@
+<div class="container">
+  <div>
+    <br /><br />
+    <h1 class="text-center">Nature Critere Liste</h1>
+  </div>
+</div>
+
+<div class="container">
+  <button class="add-button" title="Ajouter">
+    <fa-icon icon="add"></fa-icon>
+  </button>
+</div>
+
+<table class="table">
+  <thead>
+    <tr></tr>
+    <tr>
+      <th>Nature Critere ID</th>
+      <th>Nature Critere Libelle</th>
+      <th>Nature Critere Description</th>
+      <th>Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let natureCritere of natureCriteres">
+      <td>{{ natureCritere.natureCritereId }}</td>
+      <td>{{ natureCritere.natureCritereLibelle }}</td>
+      <td>{{ natureCritere.natureCritereDescription }}</td>
+      <td class="operation-buttons">
+        <button class="consult-button" title="Consulter">
+          <fa-icon icon="search"></fa-icon>
+        </button>
+        <button class="modify-button" title="Modifier">
+          <fa-icon [icon]="['fas', 'pen-to-square']"></fa-icon>
+        </button>
+        <button class="delete-button" title="Supprimer" (click)="deleteNatureCritere(natureCritere.natureCritereId, $event)">
+          <fa-icon icon="trash-alt"></fa-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="!(natureCriteres && natureCriteres.length > 0)" class="no-data">
+  <p>Aucune donnée disponible.</p>
+</div>

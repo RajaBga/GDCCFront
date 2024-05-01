@@ -23,10 +23,11 @@ import { FindLanguageFromKeyPipe } from 'app/shared/language/find-language-from-
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
+
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
-import { NatureCritereListComponent } from './entities/GDCCcomponents/nature-critere-list/nature-critere-list.component';
+import { NatureCritereListComponent } from './entities/GDCCcomponents/ParamétrageComponents/nature-critere-list/nature-critere-list.component';
+import { ConfirmationDialogComponent } from './entities/GDCCcomponents/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
   imports: [
@@ -52,10 +53,10 @@ import { NatureCritereListComponent } from './entities/GDCCcomponents/nature-cri
     MainComponent,
     NavbarComponent,
     ErrorComponent,
-    PageRibbonComponent,
     ActiveMenuDirective,
     FooterComponent,
     NatureCritereListComponent,
+    ConfirmationDialogComponent,
   ],
   bootstrap: [MainComponent],
 })

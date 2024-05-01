@@ -7,7 +7,7 @@ import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { Authority } from 'app/config/authority.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access.service';
-import { NatureCritereListComponent } from './entities/GDCCcomponents/nature-critere-list/nature-critere-list.component';
+import { NatureCritereListComponent } from './entities/GDCCcomponents/ParamétrageComponents/nature-critere-list/nature-critere-list.component';
 
 @NgModule({
   imports: [

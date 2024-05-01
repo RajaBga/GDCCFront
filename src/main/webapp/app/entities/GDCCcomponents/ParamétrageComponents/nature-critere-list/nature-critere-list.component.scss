@@ -1,0 +1,102 @@
+/* Gradient background */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-button {
+  background-color: #ff6b6b; /* Light red */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background-color: #ff5252; /* Darker light red on hover */
+  transform: translateY(-3px);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+td:hover {
+  background-color: #74b9ff; /* Light blue on hover */
+  transform: scale(1.05);
+}
+
+th {
+  background-color: #fda7df; /* Light pink */
+  color: #333;
+}
+
+.operation-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.consult-button {
+  background-color: #ffd166; /* Light orange */
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.consult-button:hover {
+  background-color: #ffc107; /* Darker light orange on hover */
+  transform: translateY(-3px);
+}
+
+.modify-button {
+  background-color: #74d69d; /* Light green */
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.modify-button:hover {
+  background-color: #2ecc71; /* Darker light green on hover */
+  transform: translateY(-3px);
+}
+
+.delete-button {
+  background-color: #a29bfe; /* Light purple */
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.delete-button:hover {
+  background-color: #6c5ce7; /* Darker light purple on hover */
+  transform: translateY(-3px);
+}
